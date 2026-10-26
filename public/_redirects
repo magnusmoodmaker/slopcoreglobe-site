@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects (ignored by GitHub Pages)
+/privacy.html      /privacy/  301
+/privacy-policy    /privacy/  301
+/privacy-policy/   /privacy/  301
+/terms.html        /terms/    301
+/tos               /terms/    301

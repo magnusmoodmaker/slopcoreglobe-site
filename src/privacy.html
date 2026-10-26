@@ -1,0 +1,101 @@
+<h1>Slopcore Globe Privacy Policy</h1>
+<p class="meta"><strong>Effective date: 26 October 2026</strong></p>
+<p class="lead">The short version: Slopcore Globe needs <strong>no login</strong>, has <strong>no ads, no advertising or analytics SDKs and no tracking</strong>, and we <strong>never sell your data</strong>. The app uses a random install ID so our server can keep your playlist and tell your suggestions and reports apart. Posts and videos come from X, so X can see your device when they load. Payments are handled entirely by Apple or Google. The details are below.</p>
+
+<h2>Who we are</h2>
+<p>Slopcore Globe is an app for iPhone and Android made by <strong>Magnus Kyltveit</strong>, an independent developer in Norway. The Android app on Google Play is published by Kyltveit ENK (org. no. 938613125), Magnus Kyltveit's sole proprietorship. In this policy, "we", "us" and "our" mean Magnus Kyltveit.</p>
+<ul>
+<li>Email: <a href="mailto:hello@slopcoreglobe.com">hello@slopcoreglobe.com</a></li>
+<li>Website: <a href="https://slopcoreglobe.com/">https://slopcoreglobe.com/</a></li>
+</ul>
+<p>Under the EU General Data Protection Regulation (GDPR), which applies in Norway through the EEA Agreement and the Norwegian Personal Data Act (personopplysningsloven), Magnus Kyltveit is the data controller for the personal data described here. The best way to reach us about privacy is by email at <a href="mailto:hello@slopcoreglobe.com">hello@slopcoreglobe.com</a>.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+<li>It does not ask for your name, email address or phone number, and you don't need an account to browse, watch or listen.</li>
+<li>It does not use your location, contacts, photos or camera.</li>
+<li>It contains no advertising, no advertising ID, no third-party analytics and no crash-reporting SDK of its own.</li>
+<li>It does not sign in to X, and never posts, likes, follows or sends messages on X for you.</li>
+<li>We do not sell, rent or share your data for advertising, and we do not use it to profile you or to train AI models.</li>
+</ul>
+
+<h2 id="install-id">Your random install ID</h2>
+<p>The first time you open the app it creates a random ID (a UUID) and stores it on your phone. It is not linked to your name, phone number, Apple ID, Google account or advertising ID. The app sends it to our server only with the requests below, so the server can tell which saved posts, suggestions and reports come from the same install. Deleting the app deletes the ID from your phone; a reinstall gets a new one.</p>
+
+<h2>Data our server stores</h2>
+<p>Our server is a database run for us by <strong>Supabase</strong> (see <a href="#processors">Service providers</a>). It stores:</p>
+<table>
+<tr><th>What</th><th>Why</th><th>How long</th></tr>
+<tr><td><strong>Your playlist:</strong> the install ID, the ID of each post you turned ON, and when.</td><td>To keep your Personal Playlist and show which posts are on it. The total number of saves for each post is used, without any install ID, for the "liked" sort and the leaderboard.</td><td>Until you turn the post OFF (that deletes the row) or use Delete my data in Settings.</td></tr>
+<tr><td><strong>Post suggestions:</strong> the link to the X post, the creator's @handle, the install ID, the time, and our review decision.</td><td>So we can review every suggested post before it appears in the app, and limit abuse.</td><td>Up to 12 months, then deleted. You can delete them sooner with Delete my data in Settings.</td></tr>
+<tr><td><strong>Reports:</strong> the post ID, the reason you chose, the optional note you write (up to 280 characters), the install ID and the time.</td><td>So we can review reported posts and remove them (moderation), and limit abuse.</td><td>Up to 12 months, then deleted. You can delete them sooner with Delete my data in Settings.</td></tr>
+<tr><td><strong>Rate-limit logs:</strong> the install ID and the time of each save or suggestion.</td><td>To stop spam and automated abuse.</td><td>Deleted automatically after 2 days.</td></tr>
+</table>
+<p>Please don't write personal information in the report note.</p>
+<p>Like any internet service, our server provider sees your device's <strong>IP address</strong> when the app connects and may keep short-lived technical logs for operation and security. We don't use IP addresses to identify you.</p>
+
+<h2>Data that stays on your phone</h2>
+<p>These are saved only on your device and are never sent to us: your playlist's name and order, creators you blocked and posts you hid in Slopcore Globe, your settings (layout, card effects, visualizer, volume, clock), the post you were last playing, and a cached copy of your subscription status. Deleting the app deletes them.</p>
+<ul>
+<li><strong>Blocking</strong> a creator only hides their posts in Slopcore Globe on your phone. It does not block them on X and nothing is sent to us or to X.</li>
+<li><strong>Motion sensor:</strong> if Card effects are on, the app reads the phone's tilt to animate the cards. The readings are used on the phone in real time and never stored or sent. You can turn this off in Settings › Card effects.</li>
+<li><strong>Now Playing and media buttons:</strong> in the landscape player the app shows the post's text, @handle and picture in your phone's Now Playing controls (lock screen, car, headphones). This stays on your device and the devices you connect it to.</li>
+<li><strong>Screen mirroring:</strong> the app checks whether your screen is mirrored so the optional "keep video in app while mirroring" setting can work. Nothing is stored or sent.</li>
+</ul>
+
+<h2 id="visualizer">The sound visualizer and the microphone</h2>
+<ul>
+<li><strong>iPhone:</strong> the visualizer follows the sound of the video that is playing, analysed on the phone. The iPhone app does not use the microphone and never asks for it.</li>
+<li><strong>Android:</strong> the visualizer listens through the microphone. The app asks for microphone permission only when you turn the Visualizer on, and uses the microphone only while it is on and the app is open on screen. The sound is turned into levels on the phone in real time. It is <strong>never recorded, saved or sent</strong> anywhere. You can turn the Visualizer off, or remove the permission in your phone's settings, at any time.</li>
+</ul>
+
+<h2 id="x">Posts and videos from X</h2>
+<p>Everything you watch in Slopcore Globe is a public post on X. Our server stores public information about those posts (post ID, text, creator name, @handle, profile picture link, date, public like/repost/view counts and media links), which we get from the X API.</p>
+<ul>
+<li>To show and play posts, the app loads pictures and videos directly from X's servers (for example <code>twimg.com</code>), and may show a post using X's official embed, which is loaded from X (<code>platform.x.com</code>). When this happens, <strong>X receives your IP address and standard device information</strong>, and its embed may use cookies or similar technology. We ask the embed not to track you ("do not track" is turned on), but X's handling of that data is covered by <a rel="noopener" href="https://x.com/en/privacy">X's Privacy Policy</a>.</li>
+<li>Links like "View on X" or a creator's @handle open X's app or website, outside Slopcore Globe.</li>
+</ul>
+
+<h2 id="subscription">Personal Playlist subscription</h2>
+<p>The optional subscription is bought through the <strong>Apple App Store</strong> or <strong>Google Play</strong>. Apple or Google handles the payment and your payment details; we never see your card or billing details. The app asks the store on your phone whether your subscription is active, and keeps that answer on the phone for up to 7 days so it keeps working offline. We do not send your purchase details to our server. Apple's and Google's own privacy policies apply to the purchase.</p>
+
+<h2 id="account">Optional Sign in with Apple (iPhone)</h2>
+<p>A future version of the iPhone app may offer an optional Sign in with Apple, only to sync your playlist across your devices. If you use it, Apple shares a stable user ID with us and, depending on your choice, your email address or an Apple private relay address. Supabase stores this account and links it to the install IDs of the phones you sign in on. We use it only to sync your playlist. You can delete the account at any time in the app (Settings › Delete account), which removes the account and its links; or email us. You can also stop using Sign in with Apple in your Apple ID settings.</p>
+
+<h2>Why we can use your data (legal bases)</h2>
+<ul>
+<li><strong>Providing the app and features you ask for</strong> (your playlist, the subscription, an optional account): performance of a contract, GDPR Article 6(1)(b).</li>
+<li><strong>Reviewing suggestions and reports, moderation, rate limits and security</strong>: our legitimate interest in running a safe service, Article 6(1)(f).</li>
+<li><strong>Microphone on Android and motion sensor effects</strong>: you turn them on, and you can turn them off at any time; the data never leaves your phone.</li>
+</ul>
+
+<h2 id="processors">Service providers and where data is stored</h2>
+<ul>
+<li><strong>Supabase</strong> (database and server) processes the server data above on our behalf under a data processing agreement. Our project is hosted in the EU (Stockholm, Sweden).</li>
+<li><strong>Apple</strong> and <strong>Google</strong> deliver the app and handle purchases. If you have agreed to share diagnostics with app developers in your phone's settings, Apple or Google may give us anonymous crash reports and usage statistics.</li>
+<li><strong>X</strong> provides the posts, pictures and videos, as described <a href="#x">above</a>. X is based in the United States and acts under its own privacy policy.</li>
+</ul>
+<p>Where data is transferred outside the EEA (for example by Apple, Google or X), the provider relies on the safeguards required by the GDPR, such as the EU-US Data Privacy Framework or Standard Contractual Clauses.</p>
+
+<h2 id="rights">Your rights</h2>
+<p>You have the right to access your data, have it corrected or deleted, restrict or object to how we use it, and receive a copy of it (data portability). You can also complain to the Norwegian Data Protection Authority, <a rel="noopener" href="https://www.datatilsynet.no/">Datatilsynet</a>, or the authority where you live.</p>
+<h3 id="delete">Deleting your data</h3>
+<ul>
+<li><strong>Delete my data:</strong> tap <strong>Settings › Delete my data</strong> in the app. This deletes everything on our server that is tied to your install ID: your likes (the posts you saved to your playlist), your post suggestions and your reports. It happens right away, and you don't need to contact us.</li>
+<li>To remove a single post from your saved playlist, turn it OFF in the Library.</li>
+<li>Uninstalling the app removes everything stored on your phone, including the install ID, your settings and your playlist's name and order. (Do this after Delete my data if you also want your server data gone, because the app needs the install ID to find it.)</li>
+<li>Rate-limit logs are deleted automatically after 2 days.</li>
+<li>For any other request about your rights, such as access to or a copy of your data, email <a href="mailto:hello@slopcoreglobe.com?subject=Slopcore%20Globe%20privacy%20request">hello@slopcoreglobe.com</a>. We reply within 30 days.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Slopcore Globe is for people aged 13 and up. This matches the age of digital consent in Norway (13) and X's minimum age. We do not knowingly collect personal data from children under 13. If we find out that we have, we will delete it. If you think a child under 13 has sent us personal data (for example in a report note), email <a href="mailto:hello@slopcoreglobe.com">hello@slopcoreglobe.com</a> and we will delete it.</p>
+
+<h2>Security</h2>
+<p>The app talks to our server only over encrypted HTTPS. The database uses row-level security: the app's public key can only read the public Library and its own rows, and reports and suggestions cannot be read back through the app.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we change how the app handles data, we will update this page and the effective date at the top. For important changes, we will also tell you in the app.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:hello@slopcoreglobe.com">hello@slopcoreglobe.com</a></p>
