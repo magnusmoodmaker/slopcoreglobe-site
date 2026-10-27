@@ -17,8 +17,8 @@
 <header class="site-header"><div class="wrap"><a class="brand" href="/" aria-label="Slopcore Globe home"><img src="/apple-touch-icon.png" alt="" width="34" height="34"><span>Slopcore Globe</span></a><nav class="site-nav" aria-label="Main"><a href="/">Home</a><a href="/privacy/" aria-current="page">Privacy</a><a href="/terms/">Terms</a></nav></div></header>
 <main class="wrap prose">
 <h1>Slopcore Globe Privacy Policy</h1>
-<p class="meta"><strong>Effective date: 26 October 2026</strong></p>
-<p class="lead">The short version: Slopcore Globe needs <strong>no login</strong>, has <strong>no ads, no advertising or analytics SDKs and no tracking</strong>, and we <strong>never sell your data</strong>. The app uses a random install ID so our server can keep your playlist and tell your suggestions and reports apart. Posts and videos come from X, so X can see your device when they load. Payments are handled entirely by Apple or Google. The details are below.</p>
+<p class="meta"><strong>Effective date: 27 October 2026</strong></p>
+<p class="lead">The short version: Slopcore Globe needs <strong>no login</strong>, has <strong>no ads, no advertising or analytics SDKs and no tracking</strong>, and we <strong>never sell your data</strong>. The app uses a random install ID, sent only when you save, suggest, report, tag, make a playlist, send feedback or delete your data, never with the routine refresh of the globe. Posts and videos come from X, so X can see your device when they load. Payments are handled entirely by Apple or Google. The details are below.</p>
 
 <h2>Who we are</h2>
 <p>Slopcore Globe is an app for iPhone and Android made by <strong>Magnus Kyltveit</strong>, an independent developer in Norway. The Android app on Google Play is published by Kyltveit ENK (org. no. 938613125), Magnus Kyltveit's sole proprietorship. In this policy, "we", "us" and "our" mean Magnus Kyltveit.</p>
@@ -38,22 +38,25 @@
 </ul>
 
 <h2 id="install-id">Your random install ID</h2>
-<p>The first time you open the app it creates a random ID (a UUID) and stores it on your phone. It is not linked to your name, phone number, Apple ID, Google account or advertising ID. The app sends it to our server only with the requests below, so the server can tell which saved posts, suggestions and reports come from the same install. Deleting the app deletes the ID from your phone; a reinstall gets a new one.</p>
+<p>The first time you open the app it creates a random ID (a UUID) and stores it on your phone. It is not linked to your name, phone number, Apple ID, Google account or advertising ID. <strong>The app does not send it when it refreshes the globe</strong> (about once a minute) or when you just look at posts. It is sent to our server only when you do one of these: save a post, make or change a playlist, add a private tag, suggest a post, report a post, send feedback, or use Delete my data. That lets the server tell which saves, playlists, tags, suggestions and reports come from the same install. Deleting the app deletes the ID from your phone; a reinstall gets a new one.</p>
 
 <h2>Data our server stores</h2>
 <p>Our server is a database run for us by <strong>Supabase</strong> (see <a href="#processors">Service providers</a>). It stores:</p>
 <table>
 <tr><th>What</th><th>Why</th><th>How long</th></tr>
-<tr><td><strong>Your playlist:</strong> the install ID, the ID of each post you turned ON, and when.</td><td>To keep your Personal Playlists and show which posts are on them. The total number of saves for each post is used, without any install ID, for the "liked" sort and the leaderboard.</td><td>Until you turn the post OFF (that deletes the row) or use Delete my data in Settings.</td></tr>
+<tr><td><strong>Your saves and playlists:</strong> the install ID, the ID of each post you saved or put in a playlist, the playlist's name, and when.</td><td>To keep your Personal Playlists and restore them if you reinstall. Playlist pictures are <strong>not</strong> included (see below).</td><td>Until you remove the post or playlist (that deletes the row) or use Delete my data in Settings.</td></tr>
+<tr><td><strong>Anonymous save counts:</strong> how many installs saved each post, as a total, without any install ID.</td><td>For the "liked" sort, the leaderboard and so we can see which posts are popular. The count cannot be traced back to you.</td><td>Kept as a running total per post.</td></tr>
+<tr><td><strong>Your private tags:</strong> the install ID, the post ID and the tag you typed (up to 24 characters).</td><td>To keep your tags and, when many people use the same tag, to let us decide whether to make it a shared tag for everyone. Your tags are private to you until we promote the tag; a shared tag carries no install ID.</td><td>Until you remove the tag or use Delete my data in Settings.</td></tr>
+<tr><td><strong>Feedback:</strong> the text you send, the install ID and the time.</td><td>To read and answer your feedback.</td><td>Up to 12 months, then deleted. You can delete it sooner with Delete my data in Settings.</td></tr>
 <tr><td><strong>Post suggestions:</strong> the link to the X post, the creator's @handle, the install ID, the time, and our review decision.</td><td>So we can review every suggested post before it appears in the app, and limit abuse.</td><td>Up to 12 months, then deleted. You can delete them sooner with Delete my data in Settings.</td></tr>
 <tr><td><strong>Reports:</strong> the post ID, the reason you chose, the optional note you write (up to 280 characters), the install ID and the time.</td><td>So we can review reported posts and remove them (moderation), and limit abuse.</td><td>Up to 12 months, then deleted. You can delete them sooner with Delete my data in Settings.</td></tr>
 <tr><td><strong>Rate-limit logs:</strong> the install ID and the time of each save or suggestion.</td><td>To stop spam and automated abuse.</td><td>Deleted automatically after 2 days.</td></tr>
 </table>
-<p>Please don't write personal information in the report note.</p>
+<p>Please don't write personal information in the report note, in tags or in feedback.</p>
 <p>Like any internet service, our server provider sees your device's <strong>IP address</strong> when the app connects and may keep short-lived technical logs for operation and security. We don't use IP addresses to identify you.</p>
 
 <h2>Data that stays on your phone</h2>
-<p>These are saved only on your device and are never sent to us: your playlist's name and order, creators you blocked and posts you hid in Slopcore Globe, your settings (layout, card effects, visualizer, volume, clock), the post you were last playing, and a cached copy of your subscription status. Deleting the app deletes them.</p>
+<p>These are saved only on your device and are never sent to us: <strong>the pictures you choose for your playlists</strong> (picked from your photo library, kept in the app's private storage, never uploaded; the app only asks for access to the photos you pick), the order of your playlists, creators you blocked and posts you hid in Slopcore Globe, your settings (layout, card effects, visualizer, volume, clock), the post you were last playing, and a cached copy of your subscription status. Deleting the app deletes them.</p>
 <ul>
 <li><strong>Blocking</strong> a creator only hides their posts in Slopcore Globe on your phone. It does not block them on X and nothing is sent to us or to X.</li>
 <li><strong>Motion sensor:</strong> if Card effects are on, the app reads the phone's tilt to animate the cards. The readings are used on the phone in real time and never stored or sent. You can turn this off in Settings › Card effects.</li>
@@ -61,21 +64,21 @@
 <li><strong>Screen mirroring:</strong> the app checks whether your screen is mirrored so the optional "keep video in app while mirroring" setting can work. Nothing is stored or sent.</li>
 </ul>
 
-<h2 id="visualizer">The sound visualizer and the microphone</h2>
-<ul>
-<li><strong>iPhone:</strong> the visualizer follows the sound of the video that is playing, analysed on the phone. The iPhone app does not use the microphone and never asks for it.</li>
-<li><strong>Android:</strong> the visualizer listens through the microphone. The app asks for microphone permission only when you turn the Visualizer on, and uses the microphone only while it is on and the app is open on screen. The sound is turned into levels on the phone in real time. It is <strong>never recorded, saved or sent</strong> anywhere. You can turn the Visualizer off, or remove the permission in your phone's settings, at any time.</li>
-</ul>
+<h2 id="visualizer">The sound visualizer</h2>
+<p>On both iPhone and Android the visualizer follows the sound of <strong>the app's own audio</strong> (the video that is playing), analysed on the phone in real time. <strong>The app does not use the microphone on either platform and never asks for microphone permission.</strong> The levels are never recorded, saved or sent anywhere.</p>
 
 <h2 id="x">Posts and videos from X</h2>
 <p>Everything you watch in Slopcore Globe is a public post on X. Our server stores public information about those posts (post ID, text, creator name, @handle, profile picture link, date, public like/repost/view counts and media links), which we get from the X API.</p>
 <ul>
-<li>To show and play posts, the app loads pictures and videos directly from X's servers (for example <code>twimg.com</code>), and may show a post using X's official embed, which is loaded from X (<code>platform.x.com</code>). When this happens, <strong>X receives your IP address and standard device information</strong>, and its embed may use cookies or similar technology. We ask the embed not to track you ("do not track" is turned on), but X's handling of that data is covered by <a rel="noopener" href="https://x.com/en/privacy">X's Privacy Policy</a>.</li>
+<li>To show and play posts, the app loads pictures and videos directly from X's servers (for example <code>twimg.com</code>). The app draws each post itself (it does not embed X's web page). When this happens, <strong>X receives your IP address and standard device information</strong>, and X's handling of that data is covered by <a rel="noopener" href="https://x.com/en/privacy">X's Privacy Policy</a>.</li>
 <li>Links like "View on X" or a creator's @handle open X's app or website, outside Slopcore Globe.</li>
 </ul>
 
 <h2 id="subscription">Personal Playlists subscription</h2>
 <p>The optional subscription is bought through the <strong>Apple App Store</strong> or <strong>Google Play</strong>. Apple or Google handles the payment and your payment details; we never see your card or billing details. The app asks the store on your phone whether your subscription is active, and keeps that answer on the phone for up to 7 days so it keeps working offline. We do not send your purchase details to our server. Apple's and Google's own privacy policies apply to the purchase.</p>
+
+<h2 id="admin">Sign in with X (owner only)</h2>
+<p>The app does <strong>not</strong> sign users in to X and does not ask you to log in to anything. The only exception is a hidden admin screen that only the owner of Slopcore Globe uses to review suggested posts, feedback and tags. It signs in with the owner's own X account (OAuth 2.0). Our server checks the X account ID, and only the owner's account unlocks it. If anyone else tries, nothing is unlocked and the X access token is not stored.</p>
 
 <h2 id="account">Optional Sign in with Apple (iPhone)</h2>
 <p>A future version of the iPhone app may offer an optional Sign in with Apple, only to sync your playlist across your devices. If you use it, Apple shares a stable user ID with us and, depending on your choice, your email address or an Apple private relay address. Supabase stores this account and links it to the install IDs of the phones you sign in on. We use it only to sync your playlist. You can delete the account at any time in the app (Settings › Delete account), which removes the account and its links; or email us. You can also stop using Sign in with Apple in your Apple ID settings.</p>
@@ -84,7 +87,7 @@
 <ul>
 <li><strong>Providing the app and features you ask for</strong> (your playlist, the subscription, an optional account): performance of a contract, GDPR Article 6(1)(b).</li>
 <li><strong>Reviewing suggestions and reports, moderation, rate limits and security</strong>: our legitimate interest in running a safe service, Article 6(1)(f).</li>
-<li><strong>Microphone on Android and motion sensor effects</strong>: you turn them on, and you can turn them off at any time; the data never leaves your phone.</li>
+<li><strong>Motion sensor effects</strong>: you turn them on, and you can turn them off at any time; the data never leaves your phone.</li>
 </ul>
 
 <h2 id="processors">Service providers and where data is stored</h2>
@@ -99,9 +102,9 @@
 <p>You have the right to access your data, have it corrected or deleted, restrict or object to how we use it, and receive a copy of it (data portability). You can also complain to the Norwegian Data Protection Authority, <a rel="noopener" href="https://www.datatilsynet.no/">Datatilsynet</a>, or the authority where you live.</p>
 <h3 id="delete">Deleting your data</h3>
 <ul>
-<li><strong>Delete my data:</strong> tap <strong>Settings › Delete my data</strong> in the app. This deletes everything on our server that is tied to your install ID: your likes (the posts you saved to your playlist), your post suggestions and your reports. It happens right away, and you don't need to contact us.</li>
-<li>To remove a single post from your saved playlist, turn it OFF in the Library.</li>
-<li>Uninstalling the app removes everything stored on your phone, including the install ID, your settings and your playlist's name and order. (Do this after Delete my data if you also want your server data gone, because the app needs the install ID to find it.)</li>
+<li><strong>Delete my data:</strong> tap <strong>Settings › Delete my data</strong> in the app. This deletes everything on our server that is tied to your install ID: your saved posts, playlists, private tags, post suggestions, reports and feedback. It also clears the same things, and the install ID, from your phone. It happens right away, and you don't need to contact us.</li>
+<li>To remove a single post from a playlist, untick it under Saved in on the post.</li>
+<li>Uninstalling the app removes everything stored on your phone, including the install ID, your settings and your playlists and their pictures. (Do this after Delete my data if you also want your server data gone, because the app needs the install ID to find it.)</li>
 <li>Rate-limit logs are deleted automatically after 2 days.</li>
 <li>For any other request about your rights, such as access to or a copy of your data, email <a href="mailto:hello@slopcoreglobe.com?subject=Slopcore%20Globe%20privacy%20request">hello@slopcoreglobe.com</a>. We reply within 30 days.</li>
 </ul>
