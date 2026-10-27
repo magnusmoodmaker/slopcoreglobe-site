@@ -10,6 +10,8 @@ PAGES = [
    "How the Slopcore Globe app handles your information: no login, no ads, no tracking, a random install ID for your playlist."),
   ("terms.html", "terms/index.html", "/terms/", "Terms of Use – Slopcore Globe",
    "Terms of Use for the Slopcore Globe app, including the Personal Playlists subscription."),
+  ("credits.html", "credits/index.html", "/credits/", "Credits – Slopcore Globe",
+   "Credits for Slopcore Globe: Model 01 from slopcore.fun, posts from X and their creators, fonts and open-source licences."),
   ("404.html", "404.html", None, "Page not found – Slopcore Globe", "Page not found."),
 ]
 def nav(path):
@@ -38,7 +40,7 @@ def page(src, path, title, desc):
 <main class="{cls}">
 {body.strip()}
 </main>
-<footer class="site-footer"><div class="wrap"><span>© 2026 Magnus Kyltveit · <a href="mailto:hello@slopcoreglobe.com">hello@slopcoreglobe.com</a></span><span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a rel="noopener" href="https://x.com/slopcoreglobe">@slopcoreglobe</a></span></div></footer>
+<footer class="site-footer"><div class="wrap"><span>© 2026 Magnus Kyltveit · <a href="mailto:hello@slopcoreglobe.com">hello@slopcoreglobe.com</a></span><span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/credits/">Credits</a> · <a rel="noopener" href="https://x.com/slopcoreglobe">@slopcoreglobe</a></span></div></footer>
 </body>
 </html>
 """
