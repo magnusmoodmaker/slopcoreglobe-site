@@ -9,7 +9,7 @@ PAGES = [
   ("privacy.html", "privacy/index.html", "/privacy/", "Privacy Policy – Slopcore Globe",
    "How the Slopcore Globe app handles your information: no login, no ads, no tracking, a random install ID for your playlist."),
   ("terms.html", "terms/index.html", "/terms/", "Terms of Use – Slopcore Globe",
-   "Terms of Use for the Slopcore Globe app, including the Personal Playlist subscription."),
+   "Terms of Use for the Slopcore Globe app, including the Personal Playlists subscription."),
   ("404.html", "404.html", None, "Page not found – Slopcore Globe", "Page not found."),
 ]
 def nav(path):
